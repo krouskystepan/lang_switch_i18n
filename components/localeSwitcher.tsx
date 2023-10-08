@@ -88,7 +88,7 @@ export default function LocaleSwitcher({
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className="w-[190px] justify-start"
+          className="w-[140px] justify-start"
         >
           {getLangField(lang)}
         </Button>
