@@ -1,7 +1,6 @@
 'use client';
 
 import * as React from 'react';
-import { ChevronsUpDown } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import { Command, CommandGroup, CommandItem } from '@/components/ui/command';
@@ -36,8 +35,8 @@ export default function LocaleSwitcher({
     return segments.join('/');
   };
 
-  const getLangField = (locale: string) => {
-    switch (locale) {
+  const getLangField = (l: string) => {
+    switch (l) {
       case 'en':
         return (
           <>
@@ -89,12 +88,12 @@ export default function LocaleSwitcher({
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className="w-[160px] justify-start"
+          className="w-[190px] justify-start"
         >
           {getLangField(lang)}
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-[160px] p-0">
+      <PopoverContent className="w-[140px] p-0">
         <Command>
           <CommandGroup>
             {i18n.locales.map((locale) => {
@@ -103,7 +102,7 @@ export default function LocaleSwitcher({
                   <Link key={locale} href={redirectedPathName(locale)}>
                     <CommandItem
                       onSelect={() => setOpen(false)}
-                      className="flex justify-start"
+                      className="flex justify-start cursor-pointer"
                     >
                       {getLangField(locale)}
                     </CommandItem>
