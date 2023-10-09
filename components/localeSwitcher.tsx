@@ -88,6 +88,11 @@ export default function LocaleSwitcher({
           role="combobox"
           aria-expanded={open}
           className="w-[140px] justify-start"
+          type="button"
+          aria-haspopup="dialog"
+          aria-controls="radix-:R1llla:"
+          data-state="closed"
+          aria-label="Open Language Selector"
         >
           {getLangField(lang)}
         </Button>

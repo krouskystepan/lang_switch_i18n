@@ -2,13 +2,11 @@ import './globals.css';
 
 export default function Root({
   children,
-  params,
 }: {
   children: React.ReactNode;
-  params: { lang: string };
 }) {
   return (
-    <html lang={params.lang} className="m-10">
+    <html className="m-10">
       <body>{children}</body>
     </html>
   );
