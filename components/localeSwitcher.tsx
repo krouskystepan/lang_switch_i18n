@@ -1,7 +1,6 @@
 'use client';
 
 import * as React from 'react';
-
 import { Button } from '@/components/ui/button';
 import { Command, CommandGroup, CommandItem } from '@/components/ui/command';
 import {
@@ -37,19 +36,6 @@ export default function LocaleSwitcher({
 
   const getLangField = (l: string) => {
     switch (l) {
-      case 'en':
-        return (
-          <>
-            <Image
-              src={'/en.png'}
-              alt="en"
-              width={25}
-              height={25}
-              className="mr-2.5"
-            />
-            {dictionary.en}
-          </>
-        );
       case 'cs':
         return (
           <>
@@ -61,6 +47,19 @@ export default function LocaleSwitcher({
               className="mr-2.5"
             />
             {dictionary.cs}
+          </>
+        );
+      case 'en':
+        return (
+          <>
+            <Image
+              src={'/en.png'}
+              alt="en"
+              width={25}
+              height={25}
+              className="mr-2.5"
+            />
+            {dictionary.en}
           </>
         );
       case 'de':
