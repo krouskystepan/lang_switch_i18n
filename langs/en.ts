@@ -1,7 +1,14 @@
 export const en = {
   navigation: {
-    home: 'Home',
-    about: 'About'
+    links: {
+      home: 'Home',
+      about: 'About'
+    },
+    languages: {
+      cs: 'Czech',
+      en: 'English',
+      de: 'German'
+    }
   },
   page: {
     home: {

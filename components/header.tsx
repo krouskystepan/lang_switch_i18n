@@ -11,13 +11,13 @@ export default async function Header({ lang }: { lang: Locale }) {
       <nav className='container flex items-center justify-between'>
         <ul className='flex gap-x-8'>
           <li>
-            <Link href={`/${lang}`}>{navigation.home}</Link>
+            <Link href={`/${lang}`}>{navigation.links.home}</Link>
           </li>
           <li>
-            <Link href={`/${lang}/about`}>{navigation.about}</Link>
+            <Link href={`/${lang}/about`}>{navigation.links.about}</Link>
           </li>
         </ul>
-        <LocaleSwitcher />
+        <LocaleSwitcher lang={lang} dictionary={navigation.languages} />
       </nav>
     </header>
   )
