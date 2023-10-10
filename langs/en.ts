@@ -1,14 +1,16 @@
 export const en = {
-  languages: {
-    cs: 'Czech',
-    en: 'English',
-    de: 'German',
+  navigation: {
+    home: 'Home',
+    about: 'About'
   },
-  server_component: {
-    welcome: 'Welcome',
-  },
-  counter: {
-    increment: 'Increment',
-    decrement: 'Decrement',
-  },
-};
+  page: {
+    home: {
+      title: 'Welcome to NextJs i18n',
+      description: 'Internationalization in NextJs 13 App router'
+    },
+    about: {
+      title: 'About Us',
+      description: 'This is the about page'
+    }
+  }
+} as const
