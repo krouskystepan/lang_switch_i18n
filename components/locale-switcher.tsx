@@ -87,7 +87,7 @@ export default function LocaleSwitcher({
           variant='outline'
           role='combobox'
           aria-expanded={open}
-          className='w-[50px] justify-start'
+          className='w-[50px] sm:w-[140px] justify-start'
           type='button'
           aria-haspopup='dialog'
           aria-controls='radix-:R1llla:'
@@ -97,7 +97,7 @@ export default function LocaleSwitcher({
           {getLangField(lang)}
         </Button>
       </PopoverTrigger>
-      <PopoverContent className='w-[50px] border-none p-0'>
+      <PopoverContent className='w-[50px] sm:w-[140px] border-none p-0'>
         <Command>
           <CommandGroup>
             {i18n.locales.map(locale => {
