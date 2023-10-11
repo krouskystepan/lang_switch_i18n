@@ -21,9 +21,8 @@ export default function RootLayout({
   params: { lang: Locale }
 }) {
   return (
-    <html lang={params.lang}>
+    <html lang={params.lang} suppressHydrationWarning>
       <body>
-        {' '}
         <ThemeProvider
           attribute='class'
           defaultTheme='system'

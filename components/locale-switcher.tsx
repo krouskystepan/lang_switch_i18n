@@ -90,7 +90,6 @@ export default function LocaleSwitcher({
           className='w-[50px] sm:w-[140px] justify-start'
           type='button'
           aria-haspopup='dialog'
-          aria-controls='radix-:R1llla:'
           data-state='closed'
           aria-label='Open Language Selector'
         >
