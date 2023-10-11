@@ -46,7 +46,7 @@ export default function LocaleSwitcher({
               height={25}
               className='mr-2.5'
             />
-            {dictionary.cs}
+            <span className='hidden sm:block'>{dictionary.cs}</span>
           </>
         )
       case 'en':
@@ -59,7 +59,7 @@ export default function LocaleSwitcher({
               height={25}
               className='mr-2.5'
             />
-            {dictionary.en}
+            <span className='hidden sm:block'>{dictionary.en}</span>
           </>
         )
       case 'de':
@@ -72,7 +72,7 @@ export default function LocaleSwitcher({
               height={25}
               className='mr-2.5'
             />
-            {dictionary.de}
+            <span className='hidden sm:block'>{dictionary.de}</span>
           </>
         )
       default:
@@ -87,7 +87,7 @@ export default function LocaleSwitcher({
           variant='outline'
           role='combobox'
           aria-expanded={open}
-          className='w-[140px] justify-start'
+          className='w-[50px] justify-start'
           type='button'
           aria-haspopup='dialog'
           aria-controls='radix-:R1llla:'
@@ -97,7 +97,7 @@ export default function LocaleSwitcher({
           {getLangField(lang)}
         </Button>
       </PopoverTrigger>
-      <PopoverContent className='w-[140px] p-0 border-none'>
+      <PopoverContent className='w-[50px] border-none p-0'>
         <Command>
           <CommandGroup>
             {i18n.locales.map(locale => {
