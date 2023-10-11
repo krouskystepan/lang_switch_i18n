@@ -97,7 +97,7 @@ export default function LocaleSwitcher({
           {getLangField(lang)}
         </Button>
       </PopoverTrigger>
-      <PopoverContent className='w-[140px] p-0'>
+      <PopoverContent className='w-[140px] p-0 border-none'>
         <Command>
           <CommandGroup>
             {i18n.locales.map(locale => {

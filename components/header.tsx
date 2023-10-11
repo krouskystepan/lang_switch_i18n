@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { Locale } from '@/i18n.config'
 import { getDictionary } from '@/lib/dictionary'
 import LocaleSwitcher from './locale-switcher'
+import { ModeToggle } from './ToggleMode'
 
 export default async function Header({ lang }: { lang: Locale }) {
   const { navigation } = await getDictionary(lang)
@@ -17,7 +18,10 @@ export default async function Header({ lang }: { lang: Locale }) {
             <Link href={`/${lang}/about`}>{navigation.links.about}</Link>
           </li>
         </ul>
-        <LocaleSwitcher lang={lang} dictionary={navigation.languages} />
+        <div className='flex justify-center gap-2'>
+          <ModeToggle />
+          <LocaleSwitcher lang={lang} dictionary={navigation.languages} />
+        </div>
       </nav>
     </header>
   )

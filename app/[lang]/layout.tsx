@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Locale, i18n } from '@/i18n.config'
 import Header from '../../components/header'
+import { ThemeProvider } from '@/context/themeProvider'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -22,8 +23,16 @@ export default function RootLayout({
   return (
     <html lang={params.lang}>
       <body>
-        <Header lang={params.lang} />
-        <main>{children}</main>
+        {' '}
+        <ThemeProvider
+          attribute='class'
+          defaultTheme='system'
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Header lang={params.lang} />
+          <main>{children}</main>
+        </ThemeProvider>
       </body>
     </html>
   )
