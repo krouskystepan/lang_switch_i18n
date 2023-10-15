@@ -3,10 +3,10 @@
     "title": "Ahoj svete!"
   },
   "serverSide": {
-    "title": "Ze serveru"
+    "title": "Ze serveru nadpis"
   },
   "clientSide": {
-    "title": "Od klienta",
-    "subtitle": "Od klienta sub"
+    "title": "Od klienta nadpis",
+    "subtitle": "Od klienta podnadpis"
   }
 }

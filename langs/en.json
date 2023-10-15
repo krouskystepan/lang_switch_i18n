@@ -3,10 +3,10 @@
     "title": "Hello world!"
   },
   "serverSide": {
-    "title": "From server side"
+    "title": "From server side title"
   },
   "clientSide": {
-    "title": "From client side",
-    "subtitle": "From server side subtitle"
+    "title": "From client side title",
+    "subtitle": "From client side subtitle"
   }
 }
