@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { notFound } from 'next/navigation';
-import { locales } from '@/i18n';
+import { locales } from '@/middleware';
 
 export default function LocaleLayout({
   children,
