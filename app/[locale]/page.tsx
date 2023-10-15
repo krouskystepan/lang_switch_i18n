@@ -1,13 +1,20 @@
-import { locales } from '@/middleware';
-import { useLocale, useTranslations } from 'next-intl';
+import { ClientSide } from '@/components/ClientSide';
+import { ServerSide } from '@/components/ServerSide';
+import { useTranslations } from 'next-intl';
 
 export default function Index() {
-  const t = useTranslations('Index');
-  console.log(useLocale());
+  const t = useTranslations();
+
   return (
     <>
-      <h1>{t('title')}</h1>
-      <div>{locales.map(locale => <p key={locale}>{locale}</p>)}</div>
+      <h1>{t('page.title')}</h1>
+      <ClientSide
+        message={{
+          title: t('clientSide.title'),
+          subtitle: t('clientSide.subtitle'),
+        }}
+      />
+      <ServerSide />
     </>
   );
 }

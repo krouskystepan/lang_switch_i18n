@@ -1,5 +1,12 @@
 {
-  "Index": {
+  "page": {
     "title": "Ahoj svete!"
+  },
+  "serverSide": {
+    "title": "Ze serveru"
+  },
+  "clientSide": {
+    "title": "Od klienta",
+    "subtitle": "Od klienta sub"
   }
 }
